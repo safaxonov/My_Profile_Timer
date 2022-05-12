@@ -56,8 +56,9 @@ async def main_teletips():
                 print(f"Your birthday is {tmins} minutes away. and {int(tmins)} minutes away. abs={abs(int(tmins))}")
                 thrs = tsecs/(60*60)
                 print(f"Your birthday is {thrs} hours away. and {int(thrs)} hours away. abs={abs(int(thrs))}")
-             
-                await Date_Time_Userbot_teletips.update_profile(bio = f"Tug'ulgan kunimga: {abs(int(tdays))}-kun, {abs(int(thrs))}-soat, {abs(int(tmins))}-daqiqa qoldi" , last_name = f"{Time_teletips}")
+                
+                await Date_Time_Userbot_teletips.update_profile(bio = f"| ⏰ {Time_teletips} | 📅 {Date_teletips}" , last_name = f"𝔸𝕜𝕓𝕒𝕣𝕩𝕠𝕟 [⌚] {Time_teletips}")
+                
                 await Date_Time_Userbot_teletips.set_profile_photo(photo="Image_final_teletips.jpg")
                 me = await Date_Time_Userbot_teletips.get_me()
                 photos = await Date_Time_Userbot_teletips.get_profile_photos("me")
